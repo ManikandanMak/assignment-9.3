@@ -1,0 +1,23 @@
+1) FlumeNG :
+            >Apache Flume is a distributed, reliable, and available system for efficiently collecting, aggregating and moving large amounts of log data from many different sources to a centralized data store.
+            > Flume NG is work related to new major revision of Flume and is the subject of this post.
+            > Major components of the system are Events, Source, Sink, Channel, Agent, Client, and Configuration Provider.
+            
+2) Reliability :
+                Yes, Apache Flume provides end to end reliability because of its transactional approach in data flow with the help of Source and Sink, which is responsible for pass reliably from one end to another end in a flow.
+                
+3) Flume Distribution :
+                       > Yes. It support multiplexing flow
+                       > The event flows from one source to multiple channel and multiple destionations.
+                       > It is acheived by defining a flow multiplexer.
+                       
+4) Types of Channel :
+                     The 3 different built in channel types available in Flume are
+-
+                     > JDBC Channel – JDBC Channel stores the events in an embedded Derby database.
+                     > FILE Channel –File Channel writes the contents to a file on the file system after reading the event from a source.
+                     The file is deleted only  after the contents are successfully delivered to the sink.
+                     > MEMORY Channel is the fastest channel among the three however has the risk of data loss.
+                     The channel that you choose completely depends on the nature of the big data application and the value of each event
+                     MEMORY Channel – Events are read from the source into memory and passed to the sink.
+
